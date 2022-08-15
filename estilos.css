@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+header .navbar-brand:hover {
+  transform: scale(1.5);
+  transition-duration: 2s;
+}
+header .nav-link {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+header .banner-imagen {
+  background-image: url(multimedia/banner.jpeg);
+  background-size: cover;
+}
+
+/* main */
+main {
+  background-color: #8c50e6;
+}
+main .sec-index {
+  border: 3px solid #000;
+  padding: 15px;
+}
+main .titulo-index {
+  text-align: center;
+  color: #fff;
+  font-variant: small-caps;
+}
+main .btn {
+  background-color: #8037ed;
+  font-variant: small-caps;
+}
+main .btn:hover {
+  transform: rotateY(15deg);
+  transition-duration: 2s;
+}
+main .shop-left {
+  background-image: url(multimedia/remera.png);
+  height: 350px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+main .nosotros-right {
+  background-image: url(multimedia/nostoros.jpeg);
+  background-size: contain;
+  background-position: center;
+  height: 380px;
+  background-repeat: no-repeat;
+}
+main .equipos-left {
+  background-image: url(multimedia/todovioleta.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+}
+
+.footer {
+  background-color: #8037ed;
+  height: 80px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.footer .redes {
+  font-size: 36px;
+}
+.footer .redes .redes a {
+  color: white;
+  padding: 10px;
+}
+.footer .end {
+  margin-right: 15px;
+  font-variant: small-caps;
+  padding-top: 10px;
+}
+
+/* nosotros */
+#nosotros {
+  background-image: url(multimedia/maxdgt.jpeg);
+  background-size: cover;
+}
+
+.nos-fran {
+  background-image: url(multimedia/fran.JPG);
+  background-size: contain;
+  background-position: center;
+  height: 380px;
+  background-repeat: no-repeat;
+}
+
+.sec-nos {
+  padding: 15px;
+}
+
+.titulo-nos {
+  text-align: center;
+  color: #fff;
+  font-variant: small-caps;
+}
+
+.subtitulo-nos {
+  text-align: center;
+  color: #fff;
+  font-variant: small-caps;
+  font-size: 20px;
+}
+
+.logros {
+  height: 300px;
+}
+
+/* equipos */
+#equipos {
+  background-image: url(multimedia/equipos.jpg);
+  background-size: cover;
+}
+
+.titulo-equipos {
+  font-variant: small-caps;
+  padding-bottom: 15px;
+}
+
+.logos-equipos {
+  height: 200px;
+  width: 200px;
+}
+
+.jugadores-nombre {
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+.jugadores-csgo-foto {
+  height: 250px;
+  width: 500px;
+}
+
+.jugadores-val-foto {
+  height: 300px;
+  width: auto;
+}
+
+.section-equipos {
+  background: rgb(128, 55, 237);
+  background: linear-gradient(180deg, rgb(128, 55, 237) 0%, rgb(216, 95, 255) 100%);
+  padding-bottom: 15px;
+}
+
+.footer {
+  background-color: #8037ed;
+  height: 80px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.redes {
+  font-size: 36px;
+}
+
+.redes a {
+  color: white;
+  padding: 10px;
+}
+
+.end {
+  margin-right: 15px;
+  font-variant: small-caps;
+  padding-top: 10px;
+}/*# sourceMappingURL=estilos.css.map */
