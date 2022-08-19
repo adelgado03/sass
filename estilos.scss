@@ -12,6 +12,11 @@ $color2:#8037ed;
 /* header */
 
 header {
+    nav{
+        background-color: black;
+        opacity: 0.8;
+        
+    }
     .navbar-brand:hover {
         transform: scale(1.5);
         transition-duration: 2s;
@@ -19,16 +24,21 @@ header {
     .nav-link {
         font-weight: bold;
         text-transform: uppercase;
+        color:#f2f2f2
+        
     }
     .banner-imagen {
         background-image: url(multimedia/banner.jpeg);
         background-size: cover;
+        
     }
+    
+    
 }
 
 /* main */
 
-main {
+.index {
     background-color: $color1;
     .sec-index {
         border: 3px solid #000;
@@ -71,43 +81,18 @@ main {
     }
 }
 
-.footer {
-    background-color: $color2;
-    height: 80px;
-    padding: 20px;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    .redes {
-        font-size: 36px;
-        .redes a {
-            color: white;
-            padding: 10px;
-        }
-    }
-    .end {
-        margin-right: 15px;
-        font-variant: small-caps;
-        padding-top: 10px;
-    
-    }
-}
-
-
-
-
-
-
-
-
-
-
 /* nosotros */
 
 #nosotros {
     background-image: url(multimedia/maxdgt.jpeg);
     background-size: cover;
+}
+
+.nosotros{
+    background-color: $color1;
+    .sec-nos {
+        padding: 15px;
+    }
 }
 
 .nos-fran {
@@ -118,11 +103,6 @@ main {
     background-repeat: no-repeat;
 
 }
-
-.sec-nos {
-    padding: 15px;
-}
-
 .titulo-nos {
     text-align: center;
     color: #fff;
@@ -136,10 +116,7 @@ main {
     font-size: 20px;
 }
 
-.logros {
-    height: 300px;
 
-}
 
 /* equipos */
 
@@ -148,64 +125,61 @@ main {
     background-size: cover;
 }
 
-.titulo-equipos {
-    font-variant: small-caps;
-    padding-bottom: 15px;
-}
-
-.logos-equipos {
-    height: 200px;
-    width: 200px;
-
-}
-
-.jugadores-nombre {
-    font-weight: bold;
-    font-variant: small-caps;
-
-}
-
-.jugadores-csgo-foto {
-    height: 250px;
-    width: 500px;
-}
-
-.jugadores-val-foto {
-    height: 300px;
-    width: auto;
-}
-
 .section-equipos {
     background: rgb(128, 55, 237);
     background: linear-gradient(180deg, rgba(128, 55, 237, 1) 0%, rgba(216, 95, 255, 1) 100%);
     padding-bottom: 15px;
+    .titulo-equipos {
+        font-variant: small-caps;
+        padding-bottom: 15px;
+    }
+    .logos-equipos {
+        height: 150px;
+        width: 150px;
+    }
+    .player{
+        padding-bottom:30px;
+        .jugadores-nombre {
+            font-weight: bold;
+            font-variant: small-caps;
+            }
+        .jugadores-csgo-foto {
+            height: 140px;
+            width: 280px;
+            }
+        .jugadores-val-foto {
+            height: 200px;
+            width: auto;
+            }
+    }
 }
 
-
-
+.player:hover{
+        transform: scale(1.6);
+        transition-duration: 4s;
+}
 
 .footer {
-    background-color: #8037ed;
+    background-color: $color2;
     height: 80px;
-    padding: 20px;
+    padding: 15px;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    .redes {
+        font-size: 36px;
+        a {
+            color: white;
+            padding: 10px;
+        }
+    }
+    .end {
+        margin-right: 15px;
+        font-variant: small-caps;
+        padding-top: 10px;
+    
+    }
 }
 
-.redes {
-    font-size: 36px;
-}
 
-.redes a {
-    color: white;
-    padding: 10px;
-}
-
-.end {
-    margin-right: 15px;
-    font-variant: small-caps;
-    padding-top: 10px;
-
-}
