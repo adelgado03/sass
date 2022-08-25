@@ -51,6 +51,9 @@ header {
     .sec-index {
         border: 3px solid #000;
         padding: 15px;
+        p {
+            font-weight: 500;
+        }
     }
     .titulo-index {
         @extend %titulos;
@@ -94,6 +97,12 @@ header {
     background-color: $color1;
     .sec-nos {
         padding: 15px;
+    }
+}
+
+.sec-nos{
+    p {
+        font-weight: 500;
     }
 }
 
