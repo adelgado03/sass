@@ -148,10 +148,7 @@ header {
     .text-player {
         color: $color1;
     }
-    .titulo-equipos {
-        font-variant: small-caps;
-        padding-bottom: 15px;
-    }
+    
     .logos-equipos {
         height: 150px;
         width: 150px;
@@ -172,11 +169,28 @@ header {
             }
     }
 }
+.titulo-equipos {
+    font-variant: small-caps;
+    padding-bottom: 15px;
+}
 
 .player:hover{
         transform: scale(1.6);
         transition-duration: 4s;
 }
+
+// shop
+
+#shop {
+    background-image: url(multimedia/EE7urqRXsAI3Z1b.jpg);
+    background-size: cover;
+}
+
+.collection-img {
+    img{height: 490px !important;}
+}
+
+
 
 .footer {
     background-color: $color2;

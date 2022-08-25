@@ -124,10 +124,6 @@ header .banner-imagen {
 .section-equipos .text-player {
   color: #8c50e6;
 }
-.section-equipos .titulo-equipos {
-  font-variant: small-caps;
-  padding-bottom: 15px;
-}
 .section-equipos .logos-equipos {
   height: 150px;
   width: 150px;
@@ -148,9 +144,23 @@ header .banner-imagen {
   width: auto;
 }
 
+.titulo-equipos {
+  font-variant: small-caps;
+  padding-bottom: 15px;
+}
+
 .player:hover {
   transform: scale(1.6);
   transition-duration: 4s;
+}
+
+#shop {
+  background-image: url(multimedia/EE7urqRXsAI3Z1b.jpg);
+  background-size: cover;
+}
+
+.collection-img img {
+  height: 490px !important;
 }
 
 .footer {
