@@ -1,3 +1,9 @@
+.subtitulo-nos, .titulo-nos, .index .titulo-index {
+  text-align: center;
+  color: #fff;
+  font-variant: small-caps;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -31,11 +37,6 @@ header .banner-imagen {
   border: 3px solid #000;
   padding: 15px;
 }
-.index .titulo-index {
-  text-align: center;
-  color: #fff;
-  font-variant: small-caps;
-}
 .index .btn {
   background-color: #8037ed;
   font-variant: small-caps;
@@ -55,8 +56,8 @@ header .banner-imagen {
   background-image: url(multimedia/nostoros.jpeg);
   background-size: contain;
   background-position: center;
-  height: 380px;
   background-repeat: no-repeat;
+  height: 380px;
 }
 .index .equipos-left {
   background-image: url(multimedia/todovioleta.jpeg);
@@ -82,20 +83,11 @@ header .banner-imagen {
   background-image: url(multimedia/fran.JPG);
   background-size: contain;
   background-position: center;
-  height: 380px;
   background-repeat: no-repeat;
-}
-
-.titulo-nos {
-  text-align: center;
-  color: #fff;
-  font-variant: small-caps;
+  height: 380px;
 }
 
 .subtitulo-nos {
-  text-align: center;
-  color: #fff;
-  font-variant: small-caps;
   font-size: 20px;
 }
 
@@ -105,10 +97,25 @@ header .banner-imagen {
   background-size: cover;
 }
 
-.section-equipos {
+.section-logo-equipos {
   background: rgb(128, 55, 237);
   background: linear-gradient(180deg, rgb(128, 55, 237) 0%, rgb(216, 95, 255) 100%);
   padding-bottom: 15px;
+}
+.section-logo-equipos .logos-equipos {
+  height: 150px;
+  width: 150px;
+}
+
+.section-equipos {
+  background-image: url(multimedia/low-poly-grid-haikei\ \(1\).png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid 15px #8c50e6;
+  padding-bottom: 15px;
+}
+.section-equipos .text-player {
+  color: #8c50e6;
 }
 .section-equipos .titulo-equipos {
   font-variant: small-caps;

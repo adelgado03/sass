@@ -1,7 +1,15 @@
 
 $color1:#8c50e6;
 $color2:#8037ed;
-
+%titulos {
+    text-align: center;
+    color: #fff;
+    font-variant: small-caps;}
+@mixin foto-nr{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 * {
     margin: 0;
@@ -45,9 +53,7 @@ header {
         padding: 15px;
     }
     .titulo-index {
-        text-align: center;
-        color: #fff;
-        font-variant: small-caps;
+        @extend %titulos;
     }
     .btn {
         background-color: $color2;
@@ -61,17 +67,13 @@ header {
     .shop-left {
         background-image: url(multimedia/remera.png);
         height: 350px;
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
+        @include foto-nr;
     }
     // nosotros
     .nosotros-right {
         background-image: url(multimedia/nostoros.jpeg);
-        background-size: contain;
-        background-position: center;
+        @include foto-nr;
         height: 380px;
-        background-repeat: no-repeat;
     }
     .equipos-left {
         background-image: url(multimedia/todovioleta.jpeg);
@@ -97,22 +99,16 @@ header {
 
 .nos-fran {
     background-image: url(multimedia/fran.JPG);
-    background-size: contain;
-    background-position: center;
-    height: 380px;
-    background-repeat: no-repeat;
+    @include foto-nr;
+    height: 380px
 
 }
 .titulo-nos {
-    text-align: center;
-    color: #fff;
-    font-variant: small-caps;
+    @extend %titulos;
 }
 
 .subtitulo-nos {
-    text-align: center;
-    color: #fff;
-    font-variant: small-caps;
+    @extend %titulos;
     font-size: 20px;
 }
 
@@ -125,10 +121,24 @@ header {
     background-size: cover;
 }
 
-.section-equipos {
+.section-logo-equipos {
     background: rgb(128, 55, 237);
     background: linear-gradient(180deg, rgba(128, 55, 237, 1) 0%, rgba(216, 95, 255, 1) 100%);
     padding-bottom: 15px;
+    .logos-equipos {
+        height: 150px;
+        width: 150px;
+    }
+}
+.section-equipos {
+    background-image: url(multimedia/low-poly-grid-haikei\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid 15px $color1;
+    padding-bottom: 15px;
+    .text-player {
+        color: $color1;
+    }
     .titulo-equipos {
         font-variant: small-caps;
         padding-bottom: 15px;
