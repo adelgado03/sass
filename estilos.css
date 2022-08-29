@@ -1,4 +1,4 @@
-.subtitulo-nos, .titulo-nos, .index .titulo-index {
+.contenedor-derecho .titulo-contacto, .tienda .shop-nombre, .tienda h1, .subtitulo-nos, .titulo-nos, .index .titulo-index {
   text-align: center;
   color: #fff;
   font-variant: small-caps;
@@ -38,7 +38,7 @@ header .banner-imagen {
   padding: 15px;
 }
 .index .sec-index p {
-  font-weight: 500;
+  font-weight: 700;
 }
 .index .btn {
   background-color: #8037ed;
@@ -76,10 +76,14 @@ header .banner-imagen {
 }
 
 .nosotros {
-  background-color: #8c50e6;
+  background-color: #8037ed;
 }
 .nosotros .sec-nos {
   padding: 15px;
+  border: solid 15px #8c50e6;
+}
+.nosotros .sec-nos h2 {
+  margin-bottom: 18px;
 }
 
 .sec-nos p {
@@ -115,14 +119,12 @@ header .banner-imagen {
 }
 
 .section-equipos {
-  background-image: url(multimedia/low-poly-grid-haikei\ \(1\).png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #8037ed;
   border: solid 15px #8c50e6;
   padding-bottom: 15px;
 }
 .section-equipos .text-player {
-  color: #8c50e6;
+  color: black;
 }
 .section-equipos .logos-equipos {
   height: 150px;
@@ -150,8 +152,8 @@ header .banner-imagen {
 }
 
 .player:hover {
-  transform: scale(1.6);
-  transition-duration: 4s;
+  transform: scale(1.2);
+  transition-duration: 2.8s;
 }
 
 #shop {
@@ -159,8 +161,57 @@ header .banner-imagen {
   background-size: cover;
 }
 
-.collection-img img {
-  height: 490px !important;
+.tienda {
+  background-color: #8c50e6;
+}
+.tienda .shop-nombre {
+  font-weight: 600;
+}
+
+#contacto {
+  background-image: url(multimedia/todovioleta.jpeg);
+}
+
+.contacto {
+  border: solid 18px #8c50e6;
+  background-color: #8037ed;
+}
+
+.contacto-foto {
+  height: 850px;
+  padding-left: 25px;
+}
+
+.contenedor-derecho .titulo-contacto {
+  padding-top: 15px;
+}
+.contenedor-derecho .contacto-box {
+  font-variant: small-caps;
+  font-size: 20px;
+  color: #f2f2f2;
+  padding: 22px;
+}
+.contenedor-derecho .contacto-box span {
+  color: black;
+  font-weight: 700;
+}
+.contenedor-derecho .contacto-box .contacto-titulo {
+  opacity: 0.6;
+}
+.contenedor-derecho .contacto-box .contacto-info .span {
+  color: #8c50e6;
+}
+.contenedor-derecho .subtitulo-contacto {
+  margin-top: 25px;
+  font-size: 30px;
+  font-variant: small-caps;
+  color: #f2f2f2;
+  text-align: center;
+}
+.contenedor-derecho .sponsors {
+  justify-content: center;
+  height: 150px;
+  padding: 15px;
 }
 
 .footer {
@@ -168,9 +219,6 @@ header .banner-imagen {
   height: 80px;
   padding: 15px;
   color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
 }
 .footer .redes {
   font-size: 36px;
@@ -179,8 +227,10 @@ header .banner-imagen {
   color: white;
   padding: 10px;
 }
-.footer .end {
+.footer .redes .end {
   margin-right: 15px;
   font-variant: small-caps;
   padding-top: 10px;
+  float: right;
+  font-size: 18px;
 }/*# sourceMappingURL=estilos.css.map */
