@@ -27,14 +27,16 @@ header .nav-link {
 header .banner-imagen {
   background-image: url(multimedia/banner.jpeg);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* main */
 .index {
-  background-color: #8c50e6;
+  background-color: #545755;
 }
 .index .sec-index {
-  border: 3px solid #000;
+  border: solid 15px #8c50e6;
   padding: 15px;
 }
 .index .sec-index p {
@@ -76,18 +78,19 @@ header .banner-imagen {
 }
 
 .nosotros {
-  background-color: #8037ed;
+  background-color: #545755;
 }
 .nosotros .sec-nos {
   padding: 15px;
   border: solid 15px #8c50e6;
 }
 .nosotros .sec-nos h2 {
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .sec-nos p {
-  font-weight: 500;
+  font-weight: 700;
+  color: #f2f2f2;
 }
 
 .nos-fran {
@@ -104,7 +107,7 @@ header .banner-imagen {
 
 /* equipos */
 #equipos {
-  background-image: url(multimedia/equipos.jpg);
+  background-image: url(multimedia/043a4199674805.5ef98fcc4e242.png);
   background-size: cover;
 }
 
@@ -112,6 +115,7 @@ header .banner-imagen {
   background: rgb(128, 55, 237);
   background: linear-gradient(180deg, rgb(128, 55, 237) 0%, rgb(216, 95, 255) 100%);
   padding-bottom: 15px;
+  border: solid 15px #8c50e6;
 }
 .section-logo-equipos .logos-equipos {
   height: 150px;
@@ -119,7 +123,7 @@ header .banner-imagen {
 }
 
 .section-equipos {
-  background-color: #8037ed;
+  background-color: #545755;
   border: solid 15px #8c50e6;
   padding-bottom: 15px;
 }
@@ -162,7 +166,8 @@ header .banner-imagen {
 }
 
 .tienda {
-  background-color: #8c50e6;
+  background-color: #545755;
+  border: solid 18px #8c50e6;
 }
 .tienda .shop-nombre {
   font-weight: 600;
@@ -217,20 +222,22 @@ header .banner-imagen {
 .footer {
   background-color: #8037ed;
   height: 80px;
-  padding: 15px;
-  color: white;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
 }
 .footer .redes {
-  font-size: 36px;
+  font-size: 28px;
 }
 .footer .redes a {
   color: white;
   padding: 10px;
 }
-.footer .redes .end {
+
+.end {
   margin-right: 15px;
   font-variant: small-caps;
   padding-top: 10px;
-  float: right;
-  font-size: 18px;
+  font-size: 16px;
+  color: #f2f2f2;
 }/*# sourceMappingURL=estilos.css.map */
