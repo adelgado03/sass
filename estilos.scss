@@ -1,23 +1,4 @@
-$color1:#8c50e6;
-$color2:#8037ed;
-
-%titulos {
-    text-align: center;
-    color: #fff;
-    font-variant: small-caps;
-}
-
-@mixin foto-nr {
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import "_variables.scss";
 
 /* header */
 
@@ -25,7 +6,6 @@ header {
     nav {
         background-color: black;
         opacity: 0.8;
-
     }
 
     .navbar-brand:hover {
@@ -44,168 +24,16 @@ header {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-
     }
-
-
 }
 
 /* main */
 
-.index {
-    background-color: #545755;
-
-    .sec-index {
-        border: solid 15px $color1;
-        padding: 15px;
-
-        p {
-            font-weight: 700;
-        }
-    }
-
-    .titulo-index {
-        @extend %titulos;
-    }
-
-    .btn {
-        background-color: $color2;
-        font-variant: small-caps;
-    }
-
-    .btn:hover {
-        transform: rotateY(15deg);
-        transition-duration: 2s;
-    }
-
-    // shop
-    .shop-left {
-        background-image: url(multimedia/remera.png);
-        height: 350px;
-        @include foto-nr;
-    }
-
-    // nosotros
-    .nosotros-right {
-        background-image: url(multimedia/nostoros.jpeg);
-        @include foto-nr;
-        height: 380px;
-    }
-
-    .equipos-left {
-        background-image: url(multimedia/todovioleta.jpeg);
-        background-size: cover;
-        background-position: center;
-        height: 350px;
-    }
-}
+@import "_index.scss";
 
 /* nosotros */
 
-#nosotros {
-    background-image: url(multimedia/maxdgt.jpeg);
-    background-size: cover;
-}
-
-.nosotros {
-    background-color: #545755;
-
-    .sec-nos {
-        padding: 15px;
-        border: solid 15px $color1;
-
-        h2 {
-            margin-bottom: 20px;
-        }
-    }
-}
-
-.sec-nos {
-    p {
-        font-weight: 700;
-        color: #f2f2f2;
-    }
-}
-
-.nos-fran {
-    background-image: url(multimedia/fran.JPG);
-    @include foto-nr;
-    height: 380px
-}
-
-.titulo-nos {
-    @extend %titulos;
-}
-
-.subtitulo-nos {
-    @extend %titulos;
-    font-size: 20px;
-}
-
-
-
-/* equipos */
-
-#equipos {
-    background-image: url(multimedia/043a4199674805.5ef98fcc4e242.png);
-    background-size: cover;
-}
-
-.section-logo-equipos {
-    background: rgb(128, 55, 237);
-    background: linear-gradient(180deg, rgba(128, 55, 237, 1) 0%, rgba(216, 95, 255, 1) 100%);
-    padding-bottom: 15px;
-    border: solid 15px $color1;
-
-    .logos-equipos {
-        height: 150px;
-        width: 150px;
-    }
-}
-
-.section-equipos {
-    background-color: #545755;
-    border: solid 15px $color1;
-    padding-bottom: 15px;
-
-    .text-player {
-        color: black;
-    }
-
-    .logos-equipos {
-        height: 150px;
-        width: 150px;
-    }
-
-    .player {
-        padding-bottom: 30px;
-
-        .jugadores-nombre {
-            font-weight: bold;
-            font-variant: small-caps;
-        }
-
-        .jugadores-csgo-foto {
-            height: 140px;
-            width: 280px;
-        }
-
-        .jugadores-val-foto {
-            height: 200px;
-            width: auto;
-        }
-    }
-}
-
-.titulo-equipos {
-    font-variant: small-caps;
-    padding-bottom: 15px;
-}
-
-.player:hover {
-    transform: scale(1.2);
-    transition-duration: 2.8s;
-}
+@import "_equipos.scss";
 
 // shop
 
@@ -219,87 +47,20 @@ header {
     border: solid 18px $color1;
 
     h1 {
-        @extend %titulos;
+        @include titulos;
     }
 
     .shop-nombre {
-        @extend %titulos;
+        @include titulos;
         font-weight: 600;
     }
 }
 
-
-
 // contacto
 
-#contacto {
-    background-image: url(multimedia/todovioleta.jpeg);
-}
+@import "_contacto.scss";
 
-.contacto {
-    border: solid 18px $color1;
-    background-color: $color2;
-}
-
-.contacto-foto {
-    height: 850px;
-    padding-left: 25px;
-}
-
-.contenedor-derecho {
-    .titulo-contacto {
-        @extend %titulos;
-        padding-top: 15px;
-
-    }
-
-    .contacto-box {
-        font-variant: small-caps;
-        font-size: 20px;
-        color: #f2f2f2;
-        padding: 22px;
-
-        span {
-            color: black;
-            font-weight: 700;
-        }
-
-        .contacto-titulo {
-            opacity: 0.6;
-        }
-
-        .contacto-info {
-            .span {
-                color: $color1;
-            }
-        }
-    }
-
-    .subtitulo-contacto {
-        margin-top: 25px;
-        font-size: 30px;
-        font-variant: small-caps;
-        color: #f2f2f2;
-        text-align: center;
-    }
-
-    .sponsors {
-        justify-content: center;
-        height: 150px;
-        padding: 15px;
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
+// footer
 
 .footer {
     background-color: $color2;
@@ -307,24 +68,22 @@ header {
     padding: 12px;
     display: flex;
     justify-content: space-between;
+
     .redes {
         font-size: 28px;
-    
+
         a {
             color: white;
             padding: 10px;
         }
+    }
+    .end {
+        margin-right: 15px;
+        font-variant: small-caps;
+        padding-top: 10px;
+        font-size: 16px;
+        color: #f2f2f2;
     
     }
-    
-    
-}
-.end {
-    margin-right: 15px;
-    font-variant: small-caps;
-    padding-top: 10px;
-    font-size: 16px;
-    color: #f2f2f2;
-    
 }
 

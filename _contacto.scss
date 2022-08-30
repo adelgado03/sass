@@ -1,0 +1,58 @@
+#contacto {
+    background-image: url(multimedia/todovioleta.jpeg);
+}
+
+.contacto {
+    border: solid 18px $color1;
+    background-color: $color2;
+}
+
+.contacto-foto {
+    height: 850px;
+    padding-left: 25px;
+}
+
+.contenedor-derecho {
+    .titulo-contacto {
+        @include titulos;;
+        padding-top: 15px;
+
+    }
+
+    .contacto-box {
+        font-variant: small-caps;
+        font-size: 20px;
+        color: #f2f2f2;
+        padding: 22px;
+
+        span {
+            color: black;
+            font-weight: 700;
+        }
+
+        .contacto-titulo {
+            opacity: 0.6;
+        }
+
+        .contacto-info {
+            .span {
+                color: $color1;
+            }
+        }
+    }
+
+    .subtitulo-contacto {
+        margin-top: 25px;
+        font-size: 30px;
+        font-variant: small-caps;
+        color: #f2f2f2;
+        text-align: center;
+    }
+
+    .sponsors {
+        justify-content: center;
+        height: 150px;
+        padding: 15px;
+    }
+
+}

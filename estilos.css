@@ -1,13 +1,6 @@
-.contenedor-derecho .titulo-contacto, .tienda .shop-nombre, .tienda h1, .subtitulo-nos, .titulo-nos, .index .titulo-index {
-  text-align: center;
-  color: #fff;
-  font-variant: small-caps;
-}
-
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 /* header */
@@ -41,6 +34,11 @@ header .banner-imagen {
 }
 .index .sec-index p {
   font-weight: 700;
+}
+.index .titulo-index {
+  text-align: center;
+  color: #fff;
+  font-variant: small-caps;
 }
 .index .btn {
   background-color: #8037ed;
@@ -99,6 +97,12 @@ header .banner-imagen {
   background-position: center;
   background-repeat: no-repeat;
   height: 380px;
+}
+
+.titulo-nos, .subtitulo-nos {
+  text-align: center;
+  color: #fff;
+  font-variant: small-caps;
 }
 
 .subtitulo-nos {
@@ -169,7 +173,15 @@ header .banner-imagen {
   background-color: #545755;
   border: solid 18px #8c50e6;
 }
+.tienda h1 {
+  text-align: center;
+  color: #fff;
+  font-variant: small-caps;
+}
 .tienda .shop-nombre {
+  text-align: center;
+  color: #fff;
+  font-variant: small-caps;
   font-weight: 600;
 }
 
@@ -188,6 +200,9 @@ header .banner-imagen {
 }
 
 .contenedor-derecho .titulo-contacto {
+  text-align: center;
+  color: #fff;
+  font-variant: small-caps;
   padding-top: 15px;
 }
 .contenedor-derecho .contacto-box {
@@ -233,8 +248,7 @@ header .banner-imagen {
   color: white;
   padding: 10px;
 }
-
-.end {
+.footer .end {
   margin-right: 15px;
   font-variant: small-caps;
   padding-top: 10px;

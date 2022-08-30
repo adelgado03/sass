@@ -1,0 +1,19 @@
+$color1:#8c50e6;
+$color2:#8037ed;
+
+@mixin titulos {
+    text-align: center;
+    color: #fff;
+    font-variant: small-caps;
+}
+
+@mixin foto-nr {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}

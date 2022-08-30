@@ -1,0 +1,47 @@
+.index {
+    background-color: #545755;
+
+    .sec-index {
+        border: solid 15px $color1;
+        padding: 15px;
+
+        p {
+            font-weight: 700;
+        }
+    }
+
+    .titulo-index {
+        @include titulos;
+    }
+
+    .btn {
+        background-color: $color2;
+        font-variant: small-caps;
+    }
+
+    .btn:hover {
+        transform: rotateY(15deg);
+        transition-duration: 2s;
+    }
+
+    // shop
+    .shop-left {
+        background-image: url(multimedia/remera.png);
+        height: 350px;
+        @include foto-nr;
+    }
+
+    // nosotros
+    .nosotros-right {
+        background-image: url(multimedia/nostoros.jpeg);
+        @include foto-nr;
+        height: 380px;
+    }
+
+    .equipos-left {
+        background-image: url(multimedia/todovioleta.jpeg);
+        background-size: cover;
+        background-position: center;
+        height: 350px;
+    }
+}

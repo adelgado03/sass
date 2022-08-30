@@ -1,0 +1,104 @@
+#nosotros {
+    background-image: url(multimedia/maxdgt.jpeg);
+    background-size: cover;
+}
+
+.nosotros {
+    background-color: #545755;
+
+    .sec-nos {
+        padding: 15px;
+        border: solid 15px $color1;
+
+        h2 {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.sec-nos {
+    p {
+        font-weight: 700;
+        color: #f2f2f2;
+    }
+}
+
+.nos-fran {
+    background-image: url(multimedia/fran.JPG);
+    @include foto-nr;
+    height: 380px
+}
+
+.titulo-nos {
+    @include titulos;
+}
+
+.subtitulo-nos {
+    @extend .titulo-nos;
+    font-size: 20px;
+}
+
+
+
+/* equipos */
+
+#equipos {
+    background-image: url(multimedia/043a4199674805.5ef98fcc4e242.png);
+    background-size: cover;
+}
+
+.section-logo-equipos {
+    background: rgb(128, 55, 237);
+    background: linear-gradient(180deg, rgba(128, 55, 237, 1) 0%, rgba(216, 95, 255, 1) 100%);
+    padding-bottom: 15px;
+    border: solid 15px $color1;
+
+    .logos-equipos {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+.section-equipos {
+    background-color: #545755;
+    border: solid 15px $color1;
+    padding-bottom: 15px;
+
+    .text-player {
+        color: black;
+    }
+
+    .logos-equipos {
+        height: 150px;
+        width: 150px;
+    }
+
+    .player {
+        padding-bottom: 30px;
+
+        .jugadores-nombre {
+            font-weight: bold;
+            font-variant: small-caps;
+        }
+
+        .jugadores-csgo-foto {
+            height: 140px;
+            width: 280px;
+        }
+
+        .jugadores-val-foto {
+            height: 200px;
+            width: auto;
+        }
+    }
+}
+
+.titulo-equipos {
+    font-variant: small-caps;
+    padding-bottom: 15px;
+}
+
+.player:hover {
+    transform: scale(1.2);
+    transition-duration: 2.8s;
+}
