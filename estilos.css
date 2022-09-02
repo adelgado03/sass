@@ -240,9 +240,10 @@ header .banner-imagen {
   padding: 12px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .footer .redes {
-  font-size: 28px;
+  font-size: 36px;
 }
 .footer .redes a {
   color: white;
@@ -252,6 +253,15 @@ header .banner-imagen {
   margin-right: 15px;
   font-variant: small-caps;
   padding-top: 10px;
-  font-size: 16px;
+  font-size: 18px;
   color: #f2f2f2;
+}
+
+@media only screen and (max-width: 575px) {
+  .footer .redes {
+    font-size: 25px;
+  }
+  .footer .end {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=estilos.css.map */
